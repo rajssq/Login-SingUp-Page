@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 100;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0px;
+
+}
+
+.column {
+    flex: 1;
+}
+
+/*
+COLUNA DA ESQUERDA
+*/
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    max-width: 560px;
+}
+
+.left h1 {
+    font-size: 42px;
+    width: 100%;
+    max-width: 560px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    z-index: 9;
+}
+
+.acesso {
+    min-width: 100%;
+    max-width: 560px;
+
+
+}
+
+input[type="email"], input[type="text"],
+ input[type="password"] {
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    height: 49px;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    padding: 15px;
+    font-size: 15px;
+    width: 444px;
+    color: #000000;
+    max-width: 560px;
+}
+
+.button {
+    background-color:#0056FB;
+    color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    z-index: 10;
+}
+
+.button {
+    height: 49px;
+    border-radius: 3px;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 16px;
+    width: 444px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.area {
+    margin-top: 20px;
+}
+
+.link {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/*
+COLUNA DA DIREITA
+*/
+
+.rigth {
+    flex: 1;
+    height: 100vh;
+    background-color: #0056FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    
+}
+
+.info {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    max-width: 400px;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.description {
+    max-width: 400px;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+.acesso::before {
+    content: '';
+    position: absolute;
+    background-image: url(/components/code.svg);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+    bottom: -63px;
+    right: -40px;
+    
+}
+
